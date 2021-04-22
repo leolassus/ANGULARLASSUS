@@ -1,0 +1,35 @@
+<div *ngIf="currentMasques" class="edit-form">
+  <form method="" action="">
+    <div class="form-group">
+      <label for="id"></label>
+      <input
+        type="text"
+        class="form-control"
+        id="id"
+        [(ngModel)]="currentMasques.id"
+        nom="id"
+        placeholder="ID"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="nom"></label>
+      <input
+        type="text"
+        class="form-control"
+        id="nom"
+        [(ngModel)]="currentMasques.nom"
+        nom="nom"
+        placeholder="nom"
+      />
+    </div>
+
+    <button class="badge badge-danger mr-2" (click)="deleteMasques()">
+      Effacer
+    </button>
+
+    <button type="submit" class="badge badge-success" (click)="updateMasques()">
+      Mettre a jour
+    </button>
+  </form>
+</div>

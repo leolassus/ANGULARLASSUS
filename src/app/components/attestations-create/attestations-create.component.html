@@ -1,0 +1,36 @@
+<div class="submit-form">
+  <div *ngIf="!submitted">
+    <h3>Créer une attestation</h3>
+    <div class="form-group">
+      <label for="id"></label>
+      <input
+        type="text"
+        class="form-control"
+        id="id"
+        [(ngModel)]="Attestations.id"
+        nom="id"
+        placeholder="ID"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="nom"></label>
+      <input
+        type="text"
+        class="form-control"
+        id="nom"
+        required
+        [(ngModel)]="Attestations.nom"
+        nom="nom"
+        placeholder="nom"
+      />
+    </div>
+
+    <button (click)="createAttestations()" class="btn btn-success">Créer</button>
+  </div>
+
+  <div *ngIf="submitted">
+    <h3>validé (vous pouvez rafraichir la page)</h3>
+    <button class="btn btn-success" (click)="newMasque()">Ajouter un masque</button>
+  </div>
+</div>

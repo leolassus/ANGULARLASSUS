@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --white: rgb(185, 139, 139);
+  --bleu-header: rgb(177, 38, 96);
+
+  --font-title: "Ubuntu", sans-serif;
+  --font-text: "Noto Sans JP", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(104, 79, 79, 0.24);
+}
+
+p,
+li,
+span,
+a {
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-title);
+}
+
+/* HEADER */
+
+header {
+  background: var(--bleu-header);
+  color: var(--white);
+}
